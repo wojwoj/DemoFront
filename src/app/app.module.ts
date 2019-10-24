@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ButtonsModule } from 'angular-bootstrap-md'
+import { NavbarModule, WavesModule } from 'angular-bootstrap-md'
+import { CardsModule } from 'angular-bootstrap-md'
 
 @NgModule({
   declarations: [
@@ -10,7 +14,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
+    ButtonsModule,
+    NavbarModule,
+    WavesModule,
+    CardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
